@@ -78,6 +78,7 @@ h2:after {
     margin-top: 15px;
 }
 
+
 /*RESUABLE COMPONENTS*/
 
 .row {
@@ -189,7 +190,7 @@ header {
     display: inline-block;
     margin-right: 30px;
     font-size: 70%;
-    border: 1px solid #dbcaca;
+    border: 1px solid #ddd3d3;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -198,4 +199,55 @@ header {
 
 .social-links i {
     padding: 12px;
+}
+
+/*SKILLS*/
+
+.section-skills {
+    padding: 0 0 80px 0;
+    /*    background: rgba(250, 247, 247, 0.86);*/
+}
+
+.skills-text {
+    font-size: 80%;
+    font-weight: 600;
+}
+
+.skills-progress {
+    margin-top: 12px;
+    width: 90%;
+    height: 4px;
+    position: relative;
+    background: #edecec;
+}
+
+.skills-progress span {
+    /*  width: 90%;*/
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #d6b161;
+    transition: all 1s;
+}
+
+.skills-progress span:after {
+    color: #000;
+    content: attr(data-value);
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid #ddd3d3;
+    border-radius: 50%;
+    background: #fff;
+}
+
+/*RESUME*/
+
+.section-resume {
+    padding: 0;
 }

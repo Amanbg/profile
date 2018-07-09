@@ -102,6 +102,13 @@ section {
     color: #17cc86;
 }
 
+.icon-big {
+    font-size: 200%;
+    display: block;
+    color: #d6b161;
+    margin-bottom: 10px;
+}
+
 /*HEADERS*/
 
 header {
@@ -319,7 +326,7 @@ header {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     font-size: 16px;
     padding: 10px;
     border: 0;
@@ -330,8 +337,7 @@ header {
 }
 
 .contact-form input[type="submit"] {
-    margin-top: 20px;
-    width: 45%;
+    width: 90%;
     height: 37px;
     background-color: #d6b161;
     border: 0;
@@ -346,4 +352,42 @@ header {
     background: transparent;
     color: #d6b161;
     border: 1px solid #d6b161;
+}
+
+.info {
+    border: 1px solid #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+.info h6 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.info span {
+    color: #fff;
+}
+
+.info .item {
+    margin-bottom: 20px;
+}
+
+.info .social-links {
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.section-contact p {
+    margin-top: 60px;
+    text-align: center;
+    color: rgba(202, 221, 217, 0.79);
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
 }

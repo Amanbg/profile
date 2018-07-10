@@ -227,7 +227,9 @@ header {
     font-size: 70%;
     font-weight: 800;
     padding: 1%;
+    color: #332c2c;
 }
+
 
 .social-links {
     background: transparent;
@@ -240,8 +242,9 @@ header {
     width: 40px;
     height: 40px;
     padding: 9px 10px;
-    color: #5c4f4f;
+    color: #332c2c;
     transition: background-color 0.2s;
+    margin-bottom: 17px;
 }
 
 .social-links:hover {
@@ -258,6 +261,7 @@ header {
 .skills-text {
     font-size: 80%;
     font-weight: 600;
+    color: #332c2c;
 }
 
 .skills-progress {
@@ -313,7 +317,7 @@ header {
 
 .date {
     font-size: 70%;
-    color: #d6b161;
+    color: #c19432;
     margin-bottom: 10px;
 }
 
@@ -433,4 +437,31 @@ header {
     font-size: 12px;
     font-weight: 800;
     text-transform: uppercase;
+}
+
+
+/* ANIMATION */
+
+/*
+.js--details-1,
+.js--details-2,
+.js--details-3,
+.js--details-4,*/
+
+.js--p-img {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+
+/*
+
+.js--details-1.animated,
+.js--details-2.animated,
+.js--details-3.animated,
+.js--details-4.animated,*/
+
+.js--p-img.animated {
+    opacity: 1;
 }

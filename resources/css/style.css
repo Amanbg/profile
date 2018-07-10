@@ -1,6 +1,6 @@
 /*BASIC SETUP*/
 
-/*color:#17cc86;*/
+/*color:#d6b161;*/
 
 * {
 
@@ -71,13 +71,48 @@ h2 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #17cc86;
+    background-color: #d6b161;
     content: " ";
     width: 100px;
     margin: 0 auto;
     margin-top: 15px;
 }
 
+/*LINKS*/
+
+a:link,
+a:visited {
+    color: #d6b161;
+    text-decoration: none;
+}
+
+/*BUTTON*/
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #d6b161;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 600;
+    border: 1px solid #d6b161;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #cc9d39;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 600;
+    border: 1px solid #d6b161;
+    font-size: 16px;
+}
 
 /*RESUABLE COMPONENTS*/
 
@@ -99,13 +134,13 @@ section {
     font-size: 150%;
     margin-left: -10px;
     margin-right: 4%;
-    color: #17cc86;
+    color: #d6b161;
 }
 
 .icon-big {
     font-size: 200%;
     display: block;
-    color: #d6b161;
+    color: #d6b661;
     margin-bottom: 10px;
 }
 
@@ -133,7 +168,7 @@ header {
     width: auto;
     font-size: 90%;
     margin-top: 50px;
-    color: #17cc86;
+    color: #d6b161;
     letter-spacing: 1.1px;
 }
 
@@ -158,11 +193,12 @@ header {
     font-size: 80%;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #17cc86;
+    border-bottom: 2px solid #d6b161;
 }
 
 
@@ -194,18 +230,23 @@ header {
 }
 
 .social-links {
+    background: transparent;
     display: inline-block;
     margin-right: 30px;
     font-size: 70%;
     border: 1px solid #ddd3d3;
     border-radius: 50%;
+    font-size: 20px;
     width: 40px;
     height: 40px;
-    padding: 8px;
+    padding: 9px 10px;
+    color: #5c4f4f;
+    transition: background-color 0.2s;
 }
 
-.social-links i {
-    padding: 12px;
+.social-links:hover {
+    background-color: #d1b161;
+    color: #fff;
 }
 
 /*SKILLS*/
@@ -228,7 +269,6 @@ header {
 }
 
 .skills-progress span {
-    /*  width: 90%;*/
     height: 100%;
     position: absolute;
     left: 0;
@@ -377,7 +417,10 @@ header {
     margin-bottom: 20px;
 }
 
-.info .social-links {
+
+.info .contact-social-links {
+    display: inline-block;
+    padding: 0 30px;
     border: 0;
     color: #fff;
     font-size: 20px;

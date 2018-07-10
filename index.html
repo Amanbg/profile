@@ -13,31 +13,31 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="row">
                 <h4 class="logo">GAUTAM</h4>
                 <ul class="main-nav js--main-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">About&nbsp;Me</a>
+                        <a href="#about">About&nbsp;Me</a>
                     </li>
                     <li>
-                        <a href="#">Resume</a>
+                        <a href="#work">Work</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Hi, My name is Aman Babu Gautam</h1>
+            <h1>Welcome,<br> My name is Aman Babu Gautam</h1>
         </div>
     </header>
-    <section class="section-about">
+    <section class="section-about js--section-about" id="about">
         <div class="row">
             <h2>
                 Introduce Myself
@@ -64,7 +64,6 @@
                         <i class="ion-ios-location icon-small"></i>Bareilly, Uttar Pradesh, India
                     </li>
                 </ul>
-
                 <ul class="details">
                     <li>
                         <i class="ion-ios-email icon-small"></i>amanbabugautam@gmail.com
@@ -74,16 +73,11 @@
                     </li>
                 </ul>
                 <ul class="details">
-                    <div class="social-links">
-                        <i class="ion-social-linkedin icon-small"></i>
-                    </div>
-                    <div class="social-links">
-                        <i class="ion-social-github icon-small"></i>
-                    </div>
-                    <div class="social-links">
-                        <i class="ion-social-googleplus icon-small"></i>
-                    </div>
+                    <a href="#"><i class="ion-social-linkedin social-links"></i></a>
+                    <a href="#"><i class="ion-social-github social-links"></i></a>
+                    <a href="#"><i class="ion-social-googleplus social-links"></i></a>
                 </ul>
+                <a class="btn btn-full" href="#">Download CV</a>
             </div>
         </div>
         <div class="row">
@@ -115,7 +109,7 @@
             </div>
         </div>
     </section>
-    <section class="section-work">
+    <section class="section-work js--section-work" id="work">
         <div class="row">
             <h2>Work Experience</h2>
         </div>
@@ -140,7 +134,7 @@
             </div>
         </div>
     </section>
-    <section class="section-contact">
+    <section class="section-contact js--section-contact" id="contact">
         <div class="row">
             <h2>Get In Touch</h2>
         </div>
@@ -169,13 +163,13 @@
                         <span class="contact-icon"><i class="ion-ios-email icon-big"></i></span>
                         <h6>Email : </h6><span>amanbabugautam@gmail.com</span>
                     </div>
-                    <div class="social-links">
+                    <div class="contact-social-links">
                         <i class="ion-social-linkedin"></i>
                     </div>
-                    <div class="social-links">
+                    <div class="contact-social-links">
                         <i class="ion-social-github"></i>
                     </div>
-                    <div class="social-links">
+                    <div class="contact-social-links">
                         <i class="ion-social-googleplus"></i>
                     </div>
                 </div>
@@ -187,6 +181,9 @@
             </p>
         </div>
     </section>
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 
 </html>
